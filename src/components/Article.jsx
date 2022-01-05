@@ -5,9 +5,9 @@ const Article = ({ article }) => {
       onClick={() => (window.location.href = article.url)}
     >
       <h3 className='text-xl font-bold'>{article.title}</h3>
-      <img src={article.imageUrl} alt='Some space news' />
+      <img className='max-w-lg' src={article.imageUrl} alt='Some space news' />
       <p className='text-lg'>{article.summary}</p>
-      <div>{article.publishedAt}</div>
+      <div className='font-semibold'>{article.publishedAt}</div>
     </div>
   );
 };
